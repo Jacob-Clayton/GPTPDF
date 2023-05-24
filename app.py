@@ -22,9 +22,10 @@ with st.sidebar:
     st.markdown('''
     #####
     LLM-powered chatbot built using:
+    - [Python](https://www.python.org/)
     - [Streamlit](https://streamlit.io/)
     - [LangChain](https://python.langchain.com/)
-    - [OpenAI](https://platform.openai.com/docs/models)
+    - [OpenAI API](https://platform.openai.com/docs/models)
 
     ''')
     add_vertical_space(4)
@@ -34,6 +35,7 @@ load_dotenv()
 
 def main():
     st.header("ChatGPT with PDF upload")
+    st.text('* There is a heavy rate-limit on the OpenAI API now so this will likely struggle.')
 
 
     # upload a PDF file
