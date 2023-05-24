@@ -1,5 +1,9 @@
 import os
 import sys
+
+dotenv_path = '/opt/homebrew/lib/python3.10/site-packages'
+sys.path.append(dotenv_path)
+
 import streamlit as st
 from dotenv import load_dotenv
 import pickle
@@ -16,14 +20,14 @@ from langchain.callbacks import get_openai_callback
 with st.sidebar:
     st.title('Custom-GPT Chat App')
     st.markdown('''
-    ## About
-    This is an LLM-powered chatbot built using:
+    #####
+    LLM-powered chatbot built using:
     - [Streamlit](https://streamlit.io/)
     - [LangChain](https://python.langchain.com/)
     - [OpenAI](https://platform.openai.com/docs/models)
 
     ''')
-    add_vertical_space(5)
+    add_vertical_space(4)
     st.write('Made by [Jacob Clayton](https://github.com/Jacob-Clayton)')
 
 load_dotenv()
